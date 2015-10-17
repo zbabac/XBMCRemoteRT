@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="XBMCRemoteRT.Pages.EditConnectionPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XBMCRemoteRT.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="12,0,0,0">
+            <TextBlock Text="{StaticResource AppName}" Margin="3,12,0,-8" Style="{StaticResource PageTitleTextStyle}" />
+            <TextBlock x:Uid="EditConnectionHeader" Text="EDIT CONNECTION" Style="{StaticResource PageHeaderTextStyle}"/>
+        </StackPanel>
+
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="12,0">
+            <ScrollViewer>
+                <StackPanel Margin="0,0,0,36">
+                    <TextBox x:Name="NameTextBox" x:Uid="ConnectionName" Header="Name" Text="{Binding ConnectionName}"/>
+                    <TextBox x:Name="IPTextBox" x:Uid="ServerAddress" Header="Server address" Text="{Binding IpAddress}" InputScope="Url" />
+                    <TextBox x:Name="PortTextBox" x:Uid="Port" Header="Port" Text="{Binding Port}" InputScope="Number" />
+                    <TextBox x:Name="UsernameTextBox" x:Uid="Username" Header="Username" Text="{Binding Username}" InputScope="NameOrPhoneNumber" />
+                    <TextBox x:Name="PasswordTextBox" x:Uid="Password" Header="Password" Text="{Binding Password}" InputScope="NameOrPhoneNumber" />                    
+                    <TextBlock x:Uid="WakeOnLan" Text="WAKE ON LAN" Style="{StaticResource ResourceKey=ParagraphHeaderTextStyle}" Margin="0,12,0,0"/>
+                    <ToggleSwitch x:Name="WOLEnabledToggle" IsOn="{Binding IsWakable}" x:Uid="WOLToggle" Header="Enable wake on LAN for this server"/>
+                    <TextBox x:Name="MACAddressTextBox" x:Uid="MAC" Header="MAC address" Text="{Binding MACAddress, Converter={StaticResource MACAddressConverter}}" PlaceholderText="11:22:33:44:55:66" IsEnabled="{Binding IsOn, ElementName=WOLEnabledToggle}" />
+                    <TextBox x:Name="SubnetMaskTextBox" x:Uid="SubnetMask" Header="Subnet mask" Text="{Binding SubnetMask, Converter={StaticResource IPAddressConverter}}" PlaceholderText="255.255.255.0" IsEnabled="{Binding IsOn, ElementName=WOLEnabledToggle}" />
+                    <ToggleSwitch x:Name="AutoWakeToggle" x:Uid="AutoWakeToggle" IsOn="{Binding AutoWake}" Header="Try automatic wakeup" IsEnabled="{Binding IsOn, ElementName=WOLEnabledToggle}" />
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton x:ConnectionId='1' x:Name="SaveConnectionAppBarButton" x:Uid="SaveAppBarMenu"                                          Label="save" Icon="Save"/>
+                <AppBarButton x:ConnectionId='2' x:Name="CancelAppBarButton" x:Uid="CancelAppBarMenu"                                  Label="cancel" Icon="Cancel"/>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>
+

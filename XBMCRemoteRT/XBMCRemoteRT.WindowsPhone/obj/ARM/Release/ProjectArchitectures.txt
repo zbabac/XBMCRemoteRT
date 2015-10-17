@@ -1,0 +1,1 @@
+C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\XBMCRemoteRT.WindowsPhone.csproj;arm

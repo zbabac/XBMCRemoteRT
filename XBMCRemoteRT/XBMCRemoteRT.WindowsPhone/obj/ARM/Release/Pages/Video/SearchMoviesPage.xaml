@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="XBMCRemoteRT.Pages.Video.SearchMoviesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XBMCRemoteRT.Pages.Video"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="12,0,12,10">
+            <TextBlock Text="SEARCH MOVIES" x:Uid="SearchMoviesTitle" Style="{StaticResource PageTitleTextStyle}"/>
+            <TextBox x:ConnectionId='2' x:Name="SearchMoviesTextBox" InputScope="Search" Margin="0,10,0,0"                                                                                                                     />
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="12,15,12,0">
+            <!--<ScrollViewer>-->
+                <ListView x:Name="SearchMoviesListView" Margin="0,0,0,0" DataFetchSize="2">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid x:ConnectionId='1' x:Name="MovieWrapper" Height="144" Margin="0,0,0,12"                              >
+                                <Image VerticalAlignment="Top" Stretch="UniformToFill" >
+                                    <Image.Source>
+                                        <BitmapImage DecodePixelHeight="144" DecodePixelType="Logical" UriSource="/Assets/DefaultArt.jpg"/>
+                                    </Image.Source>
+                                </Image>
+                                <Image VerticalAlignment="Top" Stretch="UniformToFill" Source="{Binding Thumbnail, Converter={StaticResource AuthBitmapConverter}, ConverterParameter=w380}"/>
+                                <Rectangle Fill="#FF1F1F1F" Opacity="0.7" />
+                                <Grid HorizontalAlignment="Left" VerticalAlignment="Center" >
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <BitmapIcon Margin="10,0" Foreground="White" UriSource="ms-appx:///Assets/Icons/movie.png" Height="25" />
+                                    <TextBlock Text="{Binding Label, Converter={StaticResource ToUpperConverter}}" FontSize="22" FontWeight="ExtraBlack" TextWrapping="Wrap" Foreground="White" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            <!--</ScrollViewer>-->
+        </Grid>
+    </Grid>
+</Page>
+

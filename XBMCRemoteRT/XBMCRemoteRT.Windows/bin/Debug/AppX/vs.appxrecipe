@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>M-43NNR32</Machine>
+    <WindowsUser>ba100065</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>2b0244b5-073d-45e4-84b2-e6dca47212f0</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>F93E75200B6391683DF984B10164165CD4A81A0BCD87F7C3BBE1E8B945A68EAF</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>2b0244b5-073d-45e4-84b2-e6dca47212f0_1.0.0.0_neutral__3apyrnspsv8g2</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>2b0244b5-073d-45e4-84b2-e6dca47212f0_3apyrnspsv8g2!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>2b0244b5-073d-45e4-84b2-e6dca47212f0</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Akshay</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-27T15:22:03.023</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\XBMCRemoteRT.Windows.exe">
+      <PackagePath>XBMCRemoteRT.Windows.exe</PackagePath>
+      <Modified>2015-07-27T16:24:36.871</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\packages\Coding4Fun.Toolkit.Controls.2.0.8\lib\netcore451\Coding4Fun.Toolkit.Controls.dll">
+      <PackagePath>Coding4Fun.Toolkit.Controls.dll</PackagePath>
+      <Modified>2015-07-27T15:21:53.722</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\packages\Coding4Fun.Toolkit.Controls.2.0.8\lib\netcore451\Coding4Fun.Toolkit.dll">
+      <PackagePath>Coding4Fun.Toolkit.dll</PackagePath>
+      <Modified>2015-07-27T15:21:53.738</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\packages\Newtonsoft.Json.6.0.5\lib\netcore45\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2015-07-27T15:21:54.722</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\packages\GoogleAnalyticsSDK.1.2.12\lib\windows81\GoogleAnalytics.Core.winmd">
+      <PackagePath>GoogleAnalytics.Core.winmd</PackagePath>
+      <Modified>2015-07-27T15:21:54.191</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\packages\GoogleAnalyticsSDK.1.2.12\lib\windows81\GoogleAnalytics.winmd">
+      <PackagePath>GoogleAnalytics.winmd</PackagePath>
+      <Modified>2015-07-27T15:21:54.207</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\Assets\Icons\album.png">
+      <PackagePath>Assets\Icons\album.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.879</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\Assets\Icons\movie.png">
+      <PackagePath>Assets\Icons\movie.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.879</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\Assets\Icons\musicnote.png">
+      <PackagePath>Assets\Icons\musicnote.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.879</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\Assets\Icons\singer.png">
+      <PackagePath>Assets\Icons\singer.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.895</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\Assets\Icons\tv.png">
+      <PackagePath>Assets\Icons\tv.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.895</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\add.png">
+      <PackagePath>Assets\Glyphs\add.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\appbar.back.rest.png">
+      <PackagePath>Assets\Glyphs\appbar.back.rest.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\appbar.down.png">
+      <PackagePath>Assets\Glyphs\appbar.down.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\appbar.lines.horizontal.4.png">
+      <PackagePath>Assets\Glyphs\appbar.lines.horizontal.4.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\appbar.next.rest.png">
+      <PackagePath>Assets\Glyphs\appbar.next.rest.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\appbar.speakerphone.png">
+      <PackagePath>Assets\Glyphs\appbar.speakerphone.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\appbar.transport.ff.rest.png">
+      <PackagePath>Assets\Glyphs\appbar.transport.ff.rest.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\appbar.transport.pause.rest.png">
+      <PackagePath>Assets\Glyphs\appbar.transport.pause.rest.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\appbar.transport.play.rest.png">
+      <PackagePath>Assets\Glyphs\appbar.transport.play.rest.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\appbar.transport.rew.rest.png">
+      <PackagePath>Assets\Glyphs\appbar.transport.rew.rest.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\appbar.up.png">
+      <PackagePath>Assets\Glyphs\appbar.up.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\cancel.png">
+      <PackagePath>Assets\Glyphs\cancel.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\check.png">
+      <PackagePath>Assets\Glyphs\check.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\delete.png">
+      <PackagePath>Assets\Glyphs\delete.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\feature.search.png">
+      <PackagePath>Assets\Glyphs\feature.search.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\goback.png">
+      <PackagePath>Assets\Glyphs\goback.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\home.png">
+      <PackagePath>Assets\Glyphs\home.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\menulines.png">
+      <PackagePath>Assets\Glyphs\menulines.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\page.png">
+      <PackagePath>Assets\Glyphs\page.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\power.png">
+      <PackagePath>Assets\Glyphs\power.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\refresh.png">
+      <PackagePath>Assets\Glyphs\refresh.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\repeat.png">
+      <PackagePath>Assets\Glyphs\repeat.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\save.png">
+      <PackagePath>Assets\Glyphs\save.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\shuffle.png">
+      <PackagePath>Assets\Glyphs\shuffle.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\speeddown.png">
+      <PackagePath>Assets\Glyphs\speeddown.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\speedup.png">
+      <PackagePath>Assets\Glyphs\speedup.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\stop.png">
+      <PackagePath>Assets\Glyphs\stop.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\transport.repeat.png">
+      <PackagePath>Assets\Glyphs\transport.repeat.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Glyphs\transport.repeatone.png">
+      <PackagePath>Assets\Glyphs\transport.repeatone.png</PackagePath>
+      <Modified>2015-07-27T15:12:26.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-27T15:12:26.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-27T15:12:26.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-27T15:12:26.785</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-27T15:12:26.785</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\analytics.xml">
+      <PackagePath>analytics.xml</PackagePath>
+      <Modified>2015-07-27T15:12:26.879</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\Assets\DefaultArt.jpg">
+      <PackagePath>Assets\DefaultArt.jpg</PackagePath>
+      <Modified>2015-07-27T15:12:26.738</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\ReadMe.Coding4Fun.Toolkit.txt">
+      <PackagePath>ReadMe.Coding4Fun.Toolkit.txt</PackagePath>
+      <Modified>2015-07-27T15:12:26.863</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-07-27T15:21:58.319</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\CoverPage.xbf">
+      <PackagePath>CoverPage.xbf</PackagePath>
+      <Modified>2015-07-27T15:21:58.319</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-07-27T15:21:58.319</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\Pages\AddConnectionPage.xbf">
+      <PackagePath>Pages\AddConnectionPage.xbf</PackagePath>
+      <Modified>2015-07-27T15:21:58.319</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\Pages\Audio\AlbumPage.xbf">
+      <PackagePath>Pages\Audio\AlbumPage.xbf</PackagePath>
+      <Modified>2015-07-27T15:21:58.319</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\Pages\Audio\AllMusicPage.xbf">
+      <PackagePath>Pages\Audio\AllMusicPage.xbf</PackagePath>
+      <Modified>2015-07-27T15:21:58.335</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\Pages\Audio\ArtistDetailsPage.xbf">
+      <PackagePath>Pages\Audio\ArtistDetailsPage.xbf</PackagePath>
+      <Modified>2015-07-27T15:21:58.335</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\Pages\EditConnectionPage.xbf">
+      <PackagePath>Pages\EditConnectionPage.xbf</PackagePath>
+      <Modified>2015-07-27T15:21:58.335</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\Pages\InputPage.xbf">
+      <PackagePath>Pages\InputPage.xbf</PackagePath>
+      <Modified>2015-07-27T15:21:58.335</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\Pages\NowPlaying.xbf">
+      <PackagePath>Pages\NowPlaying.xbf</PackagePath>
+      <Modified>2015-07-27T15:21:58.335</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\Pages\Video\AllMoviesPage.xbf">
+      <PackagePath>Pages\Video\AllMoviesPage.xbf</PackagePath>
+      <Modified>2015-07-27T15:21:58.335</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\Pages\Video\AllTVShowsPage.xbf">
+      <PackagePath>Pages\Video\AllTVShowsPage.xbf</PackagePath>
+      <Modified>2015-07-27T15:21:58.351</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\Pages\Video\MovieDetailsHub.xbf">
+      <PackagePath>Pages\Video\MovieDetailsHub.xbf</PackagePath>
+      <Modified>2015-07-27T15:21:58.351</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\Pages\Video\SearchMoviesPage.xbf">
+      <PackagePath>Pages\Video\SearchMoviesPage.xbf</PackagePath>
+      <Modified>2015-07-27T15:21:58.351</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\Pages\Video\SearchTVShowsPage.xbf">
+      <PackagePath>Pages\Video\SearchTVShowsPage.xbf</PackagePath>
+      <Modified>2015-07-27T15:21:58.366</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\Pages\Video\TVShowDetailsHub.xbf">
+      <PackagePath>Pages\Video\TVShowDetailsHub.xbf</PackagePath>
+      <Modified>2015-07-27T15:21:58.366</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\PlatformSpecificStyles.xbf">
+      <PackagePath>PlatformSpecificStyles.xbf</PackagePath>
+      <Modified>2015-07-27T15:21:58.366</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\UserControls\ColumnGridView.xbf">
+      <PackagePath>UserControls\ColumnGridView.xbf</PackagePath>
+      <Modified>2015-07-27T15:21:58.366</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\XBMCRemoteRT.Windows.xr.xml">
+      <PackagePath>XBMCRemoteRT.Windows.xr.xml</PackagePath>
+      <Modified>2015-07-27T15:21:58.163</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\packages\Coding4Fun.Toolkit.Controls.2.0.8\lib\netcore451\Coding4Fun.Toolkit.Controls\Coding4Fun.Toolkit.Controls.xr.xml">
+      <PackagePath>Coding4Fun.Toolkit.Controls\Coding4Fun.Toolkit.Controls.xr.xml</PackagePath>
+      <Modified>2015-07-27T15:21:53.738</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\packages\Coding4Fun.Toolkit.Controls.2.0.8\lib\netcore451\Coding4Fun.Toolkit.Controls\Themes\Generic.xbf">
+      <PackagePath>Coding4Fun.Toolkit.Controls\Themes\Generic.xbf</PackagePath>
+      <Modified>2015-07-27T15:21:53.738</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist\XBMCRemoteRT\XBMCRemoteRT.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-07-27T15:51:07.087</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

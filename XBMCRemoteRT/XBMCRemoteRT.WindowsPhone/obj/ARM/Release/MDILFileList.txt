@@ -1,0 +1,1 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Files><file>\GoogleAnalytics.Core.winmd</file><file>\GoogleAnalytics.winmd</file><file>\Newtonsoft.Json.dll</file><file>\XBMCRemoteRT.WindowsPhone.exe</file></Files>

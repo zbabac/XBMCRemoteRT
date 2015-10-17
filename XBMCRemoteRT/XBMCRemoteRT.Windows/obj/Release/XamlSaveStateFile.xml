@@ -1,0 +1,9 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <ReferenceAssembly PathName="c:\users\ba100065\documents\visual studio 2013\projects\kodiassist_moj\packages\coding4fun.toolkit.controls.2.0.8\lib\netcore451\coding4fun.toolkit.controls.dll" HashGuid="c6844c58-28fd-b228-23fb-858eceb9ccac" />
+    <ReferenceAssembly PathName="c:\users\ba100065\documents\visual studio 2013\projects\kodiassist_moj\packages\coding4fun.toolkit.controls.2.0.8\lib\netcore451\coding4fun.toolkit.dll" HashGuid="63c5f85e-39ba-9cf8-2429-552f57eb5034" />
+    <ReferenceAssembly PathName="c:\users\ba100065\documents\visual studio 2013\projects\kodiassist_moj\packages\googleanalyticssdk.1.2.12\lib\windows81\googleanalytics.core.winmd" HashGuid="8124767c-c20d-634f-4bbb-68246f8ec1d7" />
+    <ReferenceAssembly PathName="c:\users\ba100065\documents\visual studio 2013\projects\kodiassist_moj\packages\googleanalyticssdk.1.2.12\lib\windows81\googleanalytics.winmd" HashGuid="d450a738-c62f-db57-a988-8131defd1174" />
+    <ReferenceAssembly PathName="c:\users\ba100065\documents\visual studio 2013\projects\kodiassist_moj\packages\newtonsoft.json.6.0.5\lib\netcore45\newtonsoft.json.dll" HashGuid="e70f704a-5345-3796-c57b-a99765c2073e" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

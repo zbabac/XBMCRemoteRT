@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>M-43NNR32</Machine>
+    <WindowsUser>ba100065</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Release|ARM</SolutionConfiguration>
+    <PackageArchitecture>arm</PackageArchitecture>
+    <PackageIdentityName>91a2f61a-4083-4250-9c0a-2d68740285b3</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\obj\ARM\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\XBMCRemoteRT.WindowsPhone.exe">
+      <PackagePath>XBMCRemoteRT.WindowsPhone.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\packages\GoogleAnalyticsSDK.1.2.12\lib\wpa81\GoogleAnalytics.Core.winmd">
+      <PackagePath>GoogleAnalytics.Core.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\packages\GoogleAnalyticsSDK.1.2.12\lib\wpa81\GoogleAnalytics.winmd">
+      <PackagePath>GoogleAnalytics.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\packages\Newtonsoft.Json.6.0.6\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\analytics.xml">
+      <PackagePath>analytics.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\StoreManifest.xml">
+      <PackagePath>StoreManifest.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\VCD.xml">
+      <PackagePath>VCD.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\Assets\DefaultArt.jpg">
+      <PackagePath>Assets\DefaultArt.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\Assets\Icons\album.png">
+      <PackagePath>Assets\Icons\album.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\Assets\Icons\movie.png">
+      <PackagePath>Assets\Icons\movie.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\Assets\Icons\musicnote.png">
+      <PackagePath>Assets\Icons\musicnote.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\Assets\Icons\nowplaying.png">
+      <PackagePath>Assets\Icons\nowplaying.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\Assets\Icons\singer.png">
+      <PackagePath>Assets\Icons\singer.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\Assets\Icons\tv.png">
+      <PackagePath>Assets\Icons\tv.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\Assets\iconFont.ttf">
+      <PackagePath>Assets\iconFont.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\CoverPage.xbf">
+      <PackagePath>CoverPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\AboutPivot.xbf">
+      <PackagePath>Pages\AboutPivot.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\AddConnectionPage.xbf">
+      <PackagePath>Pages\AddConnectionPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\Audio\AlbumPage.xbf">
+      <PackagePath>Pages\Audio\AlbumPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\Audio\AllMusicPivot.xbf">
+      <PackagePath>Pages\Audio\AllMusicPivot.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\Audio\ArtistDetailsHub.xbf">
+      <PackagePath>Pages\Audio\ArtistDetailsHub.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\Audio\SearchMusicPivot.xbf">
+      <PackagePath>Pages\Audio\SearchMusicPivot.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\EditConnectionPage.xbf">
+      <PackagePath>Pages\EditConnectionPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\Entry\TVShowThinPivot.xbf">
+      <PackagePath>Pages\Entry\TVShowThinPivot.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\Files\SourceFilesPage.xbf">
+      <PackagePath>Pages\Files\SourceFilesPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\Files\AllSourcesPage.xbf">
+      <PackagePath>Pages\Files\AllSourcesPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\InputPage.xbf">
+      <PackagePath>Pages\InputPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\NowPlaying.xbf">
+      <PackagePath>Pages\NowPlaying.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\SettingsPivot.xbf">
+      <PackagePath>Pages\SettingsPivot.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\SupportPage.xbf">
+      <PackagePath>Pages\SupportPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\Video\AllMoviesPivot.xbf">
+      <PackagePath>Pages\Video\AllMoviesPivot.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\Video\AllTVShowsPage.xbf">
+      <PackagePath>Pages\Video\AllTVShowsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\Video\MovieDetailsHub.xbf">
+      <PackagePath>Pages\Video\MovieDetailsHub.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\Video\SearchMoviesPage.xbf">
+      <PackagePath>Pages\Video\SearchMoviesPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\Video\SearchTVShowsPage.xbf">
+      <PackagePath>Pages\Video\SearchTVShowsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\Video\TVShowDetailsHub.xbf">
+      <PackagePath>Pages\Video\TVShowDetailsHub.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\PlatformSpecificStyles.xbf">
+      <PackagePath>PlatformSpecificStyles.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\Pages\Entry\VoiceCommandsPage.xbf">
+      <PackagePath>Pages\Entry\VoiceCommandsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\XBMCRemoteRT.WindowsPhone.xr.xml">
+      <PackagePath>XBMCRemoteRT.WindowsPhone.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ba100065\Documents\Visual Studio 2013\Projects\KodiAssist_moj\XBMCRemoteRT\XBMCRemoteRT.WindowsPhone\bin\ARM\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

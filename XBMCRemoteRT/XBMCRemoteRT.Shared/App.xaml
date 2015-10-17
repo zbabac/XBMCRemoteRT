@@ -1,0 +1,41 @@
+﻿<Application
+    x:Class="XBMCRemoteRT.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XBMCRemoteRT"
+    xmlns:converters="using:XBMCRemoteRT.Converters">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <!--App name is held as a resource-->
+                    <x:String x:Key="AppName">KODI ASSIST</x:String>
+
+                    <!--Converters-->
+                    <converters:ListToStringConverter x:Key="ListToStringConverter"/>
+                    <converters:MinutesToStringConverter x:Key="MinutesToStringConverter"/>
+                    <converters:ListTrimmer x:Key="ListTrimmer"/>
+                    <converters:BoolToOpacityConverter x:Key="BoolToOpacityConverter"/>
+                    <converters:SpeedToSymbolIconConverter x:Key="SpeedToSymbolIconConverter"/>
+                    <converters:RepeatStateConverter x:Key="RepeatStateConverter"/>
+                    <converters:RatingConverter x:Key="RatingConverter"/>
+                    <converters:StringToImageBrushConverter x:Key="StringToImageBrushConverter"/>
+                    <converters:ToUpperConverter x:Key="ToUpperConverter"/>
+                    <converters:CountToOpacityConverter x:Key="CountToOpacityConverter"/>
+                    <converters:AuthBitmapConverter x:Key="AuthBitmapConverter"/>
+                    <converters:MacAddressConverter x:Key="MACAddressConverter"/>
+                    <converters:IPAddressConverter x:Key="IPAddressConverter"/>
+                    <converters:PlayerTypeToBoolConverter x:Key="PlayerTypeToBoolConverter"/>
+                    <converters:SecondsToStringConverter x:Key="SecondsToStringConverter"/>
+                    <converters:DurationToStringConverter x:Key="DurationToStringConverter"/>
+                    
+                </ResourceDictionary>
+
+                <ResourceDictionary Source="PlatformSpecificStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+    
+
+</Application>

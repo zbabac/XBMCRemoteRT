@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="XBMCRemoteRT.Pages.AddConnectionPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XBMCRemoteRT.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="12,0,0,0">
+            <TextBlock Text="{StaticResource AppName}" Margin="3,12,0,-8"  Style="{StaticResource PageTitleTextStyle}"/>
+            <TextBlock x:Uid="AddConnectionPageTitle" Text="ADD CONNECTION" Style="{StaticResource PageHeaderTextStyle}" />
+        </StackPanel>
+
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="12,0">
+            <ScrollViewer>
+                <StackPanel Margin="0,0,0,36">
+                    <TextBox x:Name="NameTextBox" x:Uid="ConnectionName" Header="Name"/>
+                    <TextBox x:Name="IPTextBox" x:Uid="ServerAddress" Header="Server address" InputScope="Url" />
+                    <TextBox x:Name="PortTextBox" x:Uid="Port" Text="80" Header="Port" InputScope="Number" />
+                    <TextBox x:Name="UsernameTextBox" x:Uid="Username" Header="Username" Text="xbmc" InputScope="NameOrPhoneNumber"/>
+                    <TextBox x:Name="PasswordTextBox" x:Uid="Password" Header="Password" InputScope="NameOrPhoneNumber"/>
+                    <TextBlock x:Uid="WarningNote" Style="{StaticResource ParagraphTextStyle}" />
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton x:Name="SaveConnectionAppBarButton" x:Uid="SaveAppBarMenu" Click="SaveConnectionAppBarButton_Click" Label="save" Icon="Save"/>
+                <AppBarButton x:Name="CancelAppBarButton" x:Uid="CancelAppBarMenu" Click="CancelAppBarButton_Click" Label="cancel" Icon="Cancel"/>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>

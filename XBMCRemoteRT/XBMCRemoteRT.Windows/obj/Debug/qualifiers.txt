@@ -1,0 +1,13 @@
+Scale=100
+Language=EN-US
+Language=AR-SA
+Language=CS-CZ
+Language=DA-DK
+Language=DE-DE
+Language=ES
+Language=HE-IL
+Language=HU-HU
+Language=PT
+Language=RU-RU
+Language=SR-LATN-CS
+Language=SV-SE

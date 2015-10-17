@@ -1,0 +1,175 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XBMCRemoteRT">
+
+    <Style x:Key="PageTitleTextStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontFamily" Value="Segoe WP"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+    </Style>
+    
+    <Style TargetType="TextBlock" x:Key="PageHeaderTextStyle">
+        <Setter Property="FontSize" Value="40"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontFamily" Value="Segoe WP"/>
+    </Style>
+    
+    <Style TargetType="TextBlock" x:Key="ParagraphTextStyle" BasedOn="{StaticResource BodyTextBlockStyle}">
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="FontFamily" Value="Segoe WP SemiLight"/>
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="ParagraphHeaderTextStyle">
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontSize" Value="21"/>
+    </Style>
+
+    <Style TargetType="RichTextBlock" x:Key="RichParagraphTextStyle" BasedOn="{StaticResource BodyRichTextBlockStyle}" >
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="FontFamily" Value="Segoe WP SemiLight"/>
+    </Style>
+
+    <DataTemplate x:Key="PhoneGroupHeaderTemplate">
+        <Border Background="Transparent" Padding="0,12" CommonNavigationTransitionInfo.IsStaggerElement="True">
+            <Border BorderBrush="{StaticResource PhoneAccentBrush}" BorderThickness="2,2,2,5" Width="50" Height="50" Margin="0,0,0,0" HorizontalAlignment="Left">
+                <TextBlock Text="{Binding Key}" Foreground="{StaticResource PhoneAccentBrush}" FontSize="35" FontWeight="ExtraBold" Padding="6" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            </Border>
+        </Border>
+    </DataTemplate>
+
+    <GroupStyle x:Key="PhoneListViewGroupStyle" HidesIfEmpty="True" HeaderTemplate="{StaticResource PhoneGroupHeaderTemplate}"/>
+
+    <JumpListItemBackgroundConverter x:Key="BackgroundConverter"/>
+    <JumpListItemForegroundConverter x:Key="ForegroundConverter"/>
+    <DataTemplate x:Key="JumpListTemplate">
+        <Border Padding="5">
+            <Border Background="{Binding Converter={StaticResource BackgroundConverter}}" 
+                        Width="82" Height="82" HorizontalAlignment="Left">
+                <TextBlock Text="{Binding Group.Key}" 
+                               Foreground="{Binding Converter={StaticResource ForegroundConverter}}" 
+                               FontSize="48" Padding="6" 
+                               HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            </Border>
+        </Border>
+    </DataTemplate>
+
+    <Style x:Key="ExtraLargeRoundButton" TargetType="AppBarButton">
+        <Setter Property="Foreground" Value="{ThemeResource AppBarItemForegroundThemeBrush}"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="AppBarButton">
+                    <StackPanel x:Name="LayoutRoot" Background="Transparent" Width="80">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="ApplicationViewStates">
+                                <VisualState x:Name="FullSize"/>
+                                <VisualState x:Name="Compact">
+                                    <Storyboard>                                        
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Width" Storyboard.TargetName="LayoutRoot">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="48"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Stroke" Storyboard.TargetName="Ellipse">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AppBarItemForegroundThemeBrush}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="Ellipse">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource PhoneAccentBrush}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Stroke" Storyboard.TargetName="Ellipse">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AppBarItemDisabledForegroundThemeBrush}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="Content">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AppBarItemDisabledForegroundThemeBrush}"/>
+                                        </ObjectAnimationUsingKeyFrames>                                        
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Grid HorizontalAlignment="Center" Height="80" Margin="0,12,0,4" Width="80">
+                            <Ellipse x:Name="Ellipse" Fill="{ThemeResource AppBarItemBackgroundThemeBrush}" Height="70" Stroke="{ThemeResource AppBarItemForegroundThemeBrush}" StrokeThickness="2" UseLayoutRounding="False" Width="70"/>
+                            <Grid x:Name="ContentRoot" Background="Transparent">
+                                <ContentPresenter x:Name="Content" AutomationProperties.AccessibilityView="Raw" Content="{TemplateBinding Icon}" Foreground="{TemplateBinding Foreground}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                            </Grid>
+                        </Grid>
+                        <!--<TextBlock x:Name="TextLabel" Foreground="{ThemeResource AppBarItemForegroundThemeBrush}" FontSize="9.5" FontFamily="{TemplateBinding FontFamily}" Margin="0,0,0,10.5" TextAlignment="Center" TextWrapping="Wrap" Text="{TemplateBinding Label}" Width="70.5"/>-->
+                    </StackPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="LargeRoundButton" TargetType="AppBarButton">
+        <Setter Property="Foreground" Value="{ThemeResource AppBarItemForegroundThemeBrush}"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="AppBarButton">
+                    <StackPanel x:Name="LayoutRoot" Background="Transparent" Width="55">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="ApplicationViewStates">
+                                <VisualState x:Name="FullSize"/>
+                                <VisualState x:Name="Compact">
+                                    <Storyboard>                                        
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Width" Storyboard.TargetName="LayoutRoot">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="48"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Stroke" Storyboard.TargetName="Ellipse">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AppBarItemForegroundThemeBrush}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="Ellipse">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource PhoneAccentBrush}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Stroke" Storyboard.TargetName="Ellipse">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AppBarItemDisabledForegroundThemeBrush}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="Content">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AppBarItemDisabledForegroundThemeBrush}"/>
+                                        </ObjectAnimationUsingKeyFrames>                                        
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Grid HorizontalAlignment="Center" Height="50" Margin="0,12,0,4" Width="50">
+                            <Ellipse x:Name="Ellipse" Fill="{ThemeResource AppBarItemBackgroundThemeBrush}" Height="50" Stroke="{ThemeResource AppBarItemForegroundThemeBrush}" StrokeThickness="2" UseLayoutRounding="False" Width="50"/>
+                            <Grid x:Name="ContentRoot" Background="Transparent">
+                                <ContentPresenter x:Name="Content" AutomationProperties.AccessibilityView="Raw" Content="{TemplateBinding Icon}" Foreground="{TemplateBinding Foreground}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                            </Grid>
+                        </Grid>
+                        <!--<TextBlock x:Name="TextLabel" Foreground="{ThemeResource AppBarItemForegroundThemeBrush}" FontSize="9.5" FontFamily="{TemplateBinding FontFamily}" Margin="0,0,0,10.5" TextAlignment="Center" TextWrapping="Wrap" Text="{TemplateBinding Label}" Width="70.5"/>-->
+                    </StackPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
+
