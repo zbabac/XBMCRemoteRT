@@ -346,10 +346,12 @@ namespace XBMCRemoteRT.Pages
         private string videoLibUpdate;// = "update video library";
         private string audioLibClean;// = "clean audio library";
         private string videoLibClean;// ="clean video library";
+        private string toggleFullscreen;// ="toggle full screen";
         private string showSubtitleSerach;// = "download subtitles";
         private string showVideoInfo;// = "show codec info";
         private string reboot;
         private string suspendServer;// = "suspend"
+        private string hibernate;
 
         private void PopulateFlyout()
         {
@@ -358,12 +360,14 @@ namespace XBMCRemoteRT.Pages
             videoLibUpdate = loader.GetString("UpdateVideoLibrary");
             audioLibClean = loader.GetString("CleanAudioLibrary");
             videoLibClean = loader.GetString("CleanVideoLibrary");
+            toggleFullscreen = loader.GetString("ToggleFullScreen");
             showSubtitleSerach = loader.GetString("DownloadSubtitles");
             showVideoInfo = loader.GetString("ShowCodecInfo");
             reboot = loader.GetString("Reboot"); // this string is missing in Resources.resw so it doesn't work, altough this function is not usable since it is better invoked from Kodi menu
             suspendServer = loader.GetString("Suspend"); //string Suspend is added to Resources.resw, translations should be updated
+            hibernate = loader.GetString("Hibernate");
 
-            AdvancedMenuFlyout.ItemsSource = new List<string> { audioLibUpdate, videoLibUpdate, audioLibClean, videoLibClean, showSubtitleSerach, showVideoInfo, reboot, suspendServer};
+            AdvancedMenuFlyout.ItemsSource = new List<string> { audioLibUpdate, videoLibUpdate, toggleFullscreen, audioLibClean, showVideoInfo, videoLibClean, suspendServer, showSubtitleSerach, reboot, hibernate};
         }
 
         private void AdvancedMenuFlyout_ItemsPicked(ListPickerFlyout sender, ItemsPickedEventArgs args)
@@ -374,18 +378,22 @@ namespace XBMCRemoteRT.Pages
                 AudioLibrary.Scan();
             else if (pickedCommand == videoLibUpdate)
                 VideoLibrary.Scan();
-            else if (pickedCommand == audioLibClean)
-                AudioLibrary.Clean();
-            else if (pickedCommand == videoLibClean)
-                VideoLibrary.Clean();
+            //else if (pickedCommand == audioLibClean)
+                //AudioLibrary.Clean();
+            //else if (pickedCommand == videoLibClean)
+                //VideoLibrary.Clean();
+            else if (pickedCommand == toggleFullscreen)
+                Input.ExecuteAction("togglefullscreen");
             else if (pickedCommand == showSubtitleSerach)
                 GUI.ShowSubtitleSearch();
             else if (pickedCommand == showVideoInfo)
-                Input.ExecuteAction("codecinfo");
+                Input.ExecuteAction(InputCommands.ShowCodec);
             else if (pickedCommand == suspendServer)
                 Input.ExecuteAction(SystemCommands.Suspend);  // send command System.Suspend to Kodi server - sleep
             else if (pickedCommand == reboot)
                 Input.ExecuteAction(SystemCommands.Reboot);
+            else if (pickedCommand == hibernate)
+                Input.ExecuteAction(SystemCommands.Hibernate);
         }
 
         //private InputCommands heldCommand;

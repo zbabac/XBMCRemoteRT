@@ -9,8 +9,8 @@ using XBMCRemoteRT.Helpers;
 
 namespace XBMCRemoteRT.RPCWrappers
 {
-    public enum InputCommands { Home, Back, Select, Left, Up, Right, Down, ShowOSD, ShowCodec, Info, ContextMenu };
-    public enum SystemCommands { Suspend, Reboot, Shutdown }  // option to send system commands to Kodi, like "System.Suspend"
+    public enum InputCommands { Home, Back, Select, Left, Up, Right, Down, ShowOSD, ShowCodec, Info, ContextMenu, togglefullscreen };
+    public enum SystemCommands { Suspend, Reboot, Shutdown, Hibernate }  // option to send system commands to Kodi, like "System.Suspend"
     public class Input
     {
         public static async Task ExecuteAction(SystemCommands command)

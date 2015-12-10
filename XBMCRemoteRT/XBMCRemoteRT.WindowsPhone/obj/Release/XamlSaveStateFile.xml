@@ -1,7 +1,8 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <ReferenceAssembly PathName="c:\users\ba100065\documents\visual studio 2013\projects\kodiassist_moj\packages\googleanalyticssdk.1.2.12\lib\wpa81\googleanalytics.core.winmd" HashGuid="8124767c-c20d-634f-4bbb-68246f8ec1d7" />
-    <ReferenceAssembly PathName="c:\users\ba100065\documents\visual studio 2013\projects\kodiassist_moj\packages\googleanalyticssdk.1.2.12\lib\wpa81\googleanalytics.winmd" HashGuid="1b1c128e-fe97-de85-72a9-95c028700ef7" />
-    <ReferenceAssembly PathName="c:\users\ba100065\documents\visual studio 2013\projects\kodiassist_moj\packages\newtonsoft.json.6.0.6\lib\portable-net40+sl5+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="9e796421-3b84-3ec5-6e39-cb6d41d020b7" />
+    <LocalAssembly PathName="c:\users\ba100065\documents\visual studio 2015\projects\kodiassist_moj\xbmcremotert\xbmcremotert.windowsphone\obj\release\intermediatexaml\xbmcremotert.windowsphone.exe" HashGuid="30024380-8130-4742-f8ac-4cc2e12e12a4" />
+    <ReferenceAssembly PathName="c:\users\ba100065\documents\visual studio 2015\projects\kodiassist_moj\packages\googleanalyticssdk.1.2.12\lib\wpa81\googleanalytics.core.winmd" HashGuid="8124767c-c20d-634f-4bbb-68246f8ec1d7" />
+    <ReferenceAssembly PathName="c:\users\ba100065\documents\visual studio 2015\projects\kodiassist_moj\packages\googleanalyticssdk.1.2.12\lib\wpa81\googleanalytics.winmd" HashGuid="1b1c128e-fe97-de85-72a9-95c028700ef7" />
+    <ReferenceAssembly PathName="c:\users\ba100065\documents\visual studio 2015\projects\kodiassist_moj\packages\newtonsoft.json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="0b4cdfc1-2257-2e75-23cf-4052e97b309e" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

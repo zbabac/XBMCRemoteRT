@@ -198,10 +198,10 @@
     <value>CAST</value>
   </data>
   <data name="CleanAudioLibrary" xml:space="preserve">
-    <value>clean audio library</value>
+    <value />
   </data>
   <data name="CleanVideoLibrary" xml:space="preserve">
-    <value>clean video library</value>
+    <value />
   </data>
   <data name="ConnectionName.Header" xml:space="preserve">
     <value>Name</value>
@@ -624,5 +624,11 @@ And to top it all, the app is fully open source. You can view, edit and modify e
   </data>
   <data name="Shutdown" xml:space="preserve">
     <value>shotdown Kodi</value>
+  </data>
+  <data name="Hibernate" xml:space="preserve">
+    <value>hibernate Kodi</value>
+  </data>
+  <data name="ToggleFullScreen" xml:space="preserve">
+    <value>toggle full screen</value>
   </data>
 </root>
