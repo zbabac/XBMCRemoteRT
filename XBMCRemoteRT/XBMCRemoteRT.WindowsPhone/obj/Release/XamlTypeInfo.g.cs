@@ -1568,3 +1568,4 @@ namespace XBMCRemoteRT.XBMCRemoteRT_WindowsPhone_XamlTypeInfo
 }
 
 
+

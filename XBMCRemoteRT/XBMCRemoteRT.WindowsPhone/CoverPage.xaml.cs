@@ -48,20 +48,27 @@ namespace XBMCRemoteRT
 
         public CoverPage()
         {
-            this.InitializeComponent();
+            try
+            {
+                this.InitializeComponent();
 
-            this.navigationHelper = new NavigationHelper(this);
-            this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
-            this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
+                this.navigationHelper = new NavigationHelper(this);
+                this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
+                this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
 
-            NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Required;
+                NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Required;
 
-            if (GlobalVariables.CurrentPlayerState == null)
-                GlobalVariables.CurrentPlayerState = new PlayerState();
-            DataContext = GlobalVariables.CurrentPlayerState;
-            PlayerHelper.RefreshPlayerState();
-            PlayerHelper.StartAutoRefresh(1);
-            //HandleSupportDialog();
+                if (GlobalVariables.CurrentPlayerState == null)
+                    GlobalVariables.CurrentPlayerState = new PlayerState();
+                DataContext = GlobalVariables.CurrentPlayerState;
+                PlayerHelper.RefreshPlayerState();
+                PlayerHelper.StartAutoRefresh(1);
+                //HandleSupportDialog();
+            }
+            catch
+            {
+
+            }
         }   
        
         /// <summary>
@@ -168,22 +175,29 @@ namespace XBMCRemoteRT
 
         private async void RefreshListsIfNull()
         {
-            if (Albums == null)
+            try
             {
-                Albums = await AudioLibrary.GetRecentlyAddedAlbums(new Limits { Start = 0, End = 12 });
-                MusicHubSection.DataContext = Albums;
-            }
+                if (Albums == null)
+                {
+                    Albums = await AudioLibrary.GetRecentlyAddedAlbums(new Limits { Start = 0, End = 12 });
+                    MusicHubSection.DataContext = Albums;
+                }
 
-            if (Episodes == null)
-            {
-                Episodes = await VideoLibrary.GetRecentlyAddedEpisodes(new Limits { Start = 0, End = 10 });
-                TVHubSection.DataContext = Episodes;
-            }
+                if (Episodes == null)
+                {
+                    Episodes = await VideoLibrary.GetRecentlyAddedEpisodes(new Limits { Start = 0, End = 10 });
+                    TVHubSection.DataContext = Episodes;
+                }
 
-            if (Movies == null)
+                if (Movies == null)
+                {
+                    Movies = await VideoLibrary.GetRecentlyAddedMovies(new Limits { Start = 0, End = 12 });
+                    MoviesHubSection.DataContext = Movies;
+                }
+            }
+            catch (Exception x)
             {
-                Movies = await VideoLibrary.GetRecentlyAddedMovies(new Limits { Start = 0, End = 12 });
-                MoviesHubSection.DataContext = Movies;
+                string ex = x.Message;
             }
         }
 

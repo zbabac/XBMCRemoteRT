@@ -75,16 +75,23 @@ namespace XBMCRemoteRT.Helpers
 
         public static async Task<JObject> ExecuteRPCRequest(string methodName, JObject parameters = null)
         {
-            JObject requestObject = ConstructRequestObject(methodName, parameters);
-            string requestData = requestObject.ToString();
-            HttpResponseMessage response = await ConnectionManager.ExecuteRequest(requestData);
-            if (response.StatusCode == HttpStatusCode.OK)
+            try
             {
-                string responseString = await response.Content.ReadAsStringAsync();
-                JObject responseObject = JObject.Parse(responseString);
-                return responseObject;
+                JObject requestObject = ConstructRequestObject(methodName, parameters);
+                string requestData = requestObject.ToString();
+                HttpResponseMessage response = await ConnectionManager.ExecuteRequest(requestData);
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    string responseString = await response.Content.ReadAsStringAsync();
+                    JObject responseObject = JObject.Parse(responseString);
+                    return responseObject;
+                }
+                else
+                {
+                    return new JObject();
+                }
             }
-            else
+            catch
             {
                 return new JObject();
             }

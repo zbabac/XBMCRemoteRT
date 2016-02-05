@@ -19,7 +19,7 @@ namespace XBMCRemoteRT.RPCWrappers
             JObject parameters = new JObject(
                 new JProperty("albumid", albumid),
                 new JProperty("properties",
-                    new JArray("title", "description", "artist", "genre", "theme", "mood", "style", "type", "albumlabel", "rating", "year", "musicbrainzalbumid", "musicbrainzalbumartistid", "fanart", "thumbnail", "playcount", "genreid", "artistid", "displayartist")
+                    new JArray("title", "description", "artist", "genre", "theme", "mood", "style", "type", "albumlabel", "rating", "year", "fanart", "thumbnail", "playcount", "genreid", "artistid", "displayartist")
                     ));
 
             JObject responseObject = await ConnectionManager.ExecuteRPCRequest("AudioLibrary.GetAlbumDetails", parameters);
@@ -34,7 +34,7 @@ namespace XBMCRemoteRT.RPCWrappers
         {
             JObject parameters = new JObject(
                                 new JProperty("properties",
-                                    new JArray("title", "description", "artist", "genre", "theme", "mood", "style", "type", "albumlabel", "rating", "year", "musicbrainzalbumid", "musicbrainzalbumartistid", "fanart", "thumbnail", "playcount", "genreid", "artistid", "displayartist")
+                                    new JArray("title", "description", "artist", "genre", "theme", "mood", "style", "type", "albumlabel", "rating", "year", "fanart", "thumbnail", "playcount", "genreid", "artistid", "displayartist")
                                     ));
 
             if (limits != null)
@@ -58,7 +58,7 @@ namespace XBMCRemoteRT.RPCWrappers
         {
             JObject parameters = new JObject(
                                      new JProperty("properties",
-                                         new JArray("album", "albumartist", "albumartistid", "albumid", "comment", "disc", "duration", "file", "lastplayed", "lyrics", "musicbrainzartistid", "musicbrainztrackid", "playcount", "track"))
+                                         new JArray("album", "albumartist", "albumartistid", "albumid", "comment", "disc", "duration", "file", "lastplayed", "lyrics", "playcount", "track"))
                                              );
 
             if (limits != null)
@@ -101,7 +101,7 @@ namespace XBMCRemoteRT.RPCWrappers
         {
             JObject parameters = new JObject(
                                      new JProperty("properties",
-                                         new JArray("born", "description", "died", "disbanded", "formed", "instrument", "mood", "musicbrainzartistid", "style", "yearsactive", "thumbnail", "fanart"))
+                                         new JArray("born", "description", "died", "disbanded", "formed", "instrument", "mood", "style", "yearsactive", "thumbnail", "fanart"))
                                              );
 
             if (limits != null)
@@ -131,7 +131,7 @@ namespace XBMCRemoteRT.RPCWrappers
             JObject parameters =
                                 new JObject(
                                     new JProperty("properties",
-                                        new JArray("title", "description", "artist", "genre", "theme", "mood", "style", "type", "albumlabel", "rating", "year", "musicbrainzalbumid", "musicbrainzalbumartistid", "fanart", "thumbnail", "playcount", "genreid", "artistid", "displayartist"))
+                                        new JArray("title", "description", "artist", "genre", "theme", "mood", "style", "type", "albumlabel", "rating", "year", "fanart", "thumbnail", "playcount", "genreid", "artistid", "displayartist"))
                                             );
 
             if (limits != null)

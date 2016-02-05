@@ -51,21 +51,21 @@
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>
         <Path>CLRHost.dll</Path>
-        <ActivatableClass ActivatableClassId="GoogleAnalytics.Core.TrackerManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="GoogleAnalytics.Core.TransactionItem" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="GoogleAnalytics.Core.Tracker" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="GoogleAnalytics.Core.GAServiceManager" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="GoogleAnalytics.Core.Payload" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="GoogleAnalytics.Core.Transaction" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="GoogleAnalytics.Core.Tracker" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="GoogleAnalytics.Core.TransactionItem" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="GoogleAnalytics.Core.TrackerManager" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="GoogleAnalytics.Core.Dimensions" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="GoogleAnalytics.Core.PlatformInfoProvider" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="GoogleAnalytics.Core.GAServiceManager" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="GoogleAnalytics.EasyTracker" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="GoogleAnalytics.AnalyticsEngine" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="GoogleAnalytics.EasyTrackerConfig" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="GoogleAnalytics.TransactionBuilder" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="GoogleAnalytics.EasyTracker" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="GoogleAnalytics.ProductReceipt" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="GoogleAnalytics.PlatformInfoProvider" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="GoogleAnalytics.AppReceipt" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="GoogleAnalytics.TransactionBuilder" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="GoogleAnalytics.AnalyticsEngine" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="GoogleAnalytics.PlatformInfoProvider" ThreadingModel="both" />
       </InProcessServer>
     </Extension>
   </Extensions>
@@ -76,7 +76,7 @@
     <build:Item Name="VisualStudio" Version="14.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2015" />
     <build:Item Name="OperatingSystem" Version="6.3.9600.16384 (winblue_rtm.130821-1623)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.23107.0" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.24720.0" />
     <build:Item Name="ProjectGUID" Value="{0BF43ABA-4186-4E58-A3EA-2463DF2B5F1D}" />
     <build:Item Name="Microsoft.Windows.UI.Xaml.81.Build.Tasks.dll" Version="14.0.22705.1" />
     <build:Item Name="MakePri.exe" Version="6.3.9600.17336 (winblue.150226-1500)" />
